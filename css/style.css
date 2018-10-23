@@ -42,6 +42,18 @@ h6{
 /*Global CSS*/
 /*****************************/
 
+header {
+    background: rgba(0,0,0,0);
+    text-align: left;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 150px;
+    padding: 10px 5px;
+}
 
 .masthead {
     height: 100vh;
