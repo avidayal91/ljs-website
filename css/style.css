@@ -1,0 +1,125 @@
+/*****************************/
+/*Google fonts import*/
+/*****************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+/*****************************/
+/*basic resetting*/
+/*****************************/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.site {
+/*    max-width: 50em;*/
+	margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+}
+
+
+/*****************************/
+/*Color Codes*/
+/*****************************/
+:root {
+    --yellow: #fccd0a;
+    --light-grey: #414142;
+    --dark-grey: #2b2c2e;
+}
+
+
+
+/*****************************/
+/*Global CSS*/
+/*****************************/
+
+
+.masthead {
+    height: 100vh;
+    background: url(../images/homepage-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+}
+
+.bg-dark {
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+}
+
+.yellow {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--yellow);
+    width: 100%;
+    height: 30vh;
+    -webkit-clip-path: polygon(83% 50%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(83% 50%, 100% 0, 100% 100%, 0 100%);
+    z-index: 0;
+}
+
+.grey {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--light-grey);
+    width: 100%;
+    height: 30vh;
+    -webkit-clip-path: polygon(85% 62%, 100% 32%, 100% 100%, 0 100%);
+    clip-path: polygon(85% 62%, 100% 30%, 100% 100%, 0 100%);
+    z-index: 0;
+}
+
+.masthead-content {
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+    
+}
+
+.masthead h1 {
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 900;
+    color: var(--yellow);    
+}
+
+.masthead p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+.masthead .secondary-btn,
+.masthead .primary-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: solid 3px;
+    border-color: var(--yellow);
+    border-radius: 30px;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 500;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.7);
+}
+
+.secondary-btn {
+    color: var(--yellow);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.primary-btn {
+    color: var(--light-grey);
+    background-color: var(--yellow);
+}
+
