@@ -290,12 +290,13 @@ img {
 .bootcamp {
     background: var(--light-grey);
     padding: 30px 10px;
-    padding-bottom: 50px;
+    
 }
 
 #benefit {
 /*    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 89%, 0 67%);*/
     clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 95%, 0 88%);
+    padding-bottom: 60px;
 }
 
 .img-container {
