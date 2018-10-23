@@ -42,12 +42,16 @@ h6{
 /*****************************/
 
 header {
-    background: rgba(0,0,0,0);
     text-align: left;
     position: fixed;
     z-index: 999;
     width: 100%;
-    
+    transition: s;
+}
+
+header.bg-grey {	
+    background: var(--dark-grey);
+
 }
 
 .logo {
@@ -215,7 +219,7 @@ nav a:focus,
     height: 100vh;
 }
 
-.yellow {
+.yellow-poly {
     position: absolute;
     bottom: 0;
     background-color: var(--yellow);
@@ -226,7 +230,7 @@ nav a:focus,
     z-index: 0;
 }
 
-.grey {
+.grey-poly {
     position: absolute;
     bottom: 0;
     background-color: var(--light-grey);
@@ -303,14 +307,23 @@ img {
     width: 90%;
     display: block;
     margin: 0 auto;
+    
 }
 
+.img-container img {
+    box-shadow: 0 10px 35px rgba(0,0,0,0.7);    
+}
 .text-container {
     margin: 15px auto;
 }
 
 .heading-yellow {
     color: var(--yellow);
+    font-size: 2em;
+}
+
+.heading-grey {
+    color: var(--dark-grey);
     font-size: 2em;
 }
 
@@ -327,7 +340,6 @@ img {
 }
 
 #programs {
-    height: 100vh;
-/*    background: var(--yellow);*/
+    
     
 }
