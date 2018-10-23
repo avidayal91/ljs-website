@@ -205,20 +205,6 @@ nav a:focus,
 /*Global CSS*/
 /*****************************/
 
-
-.masthead {
-    height: 100vh;
-    background: url(../images/homepage-hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 40%;
-}
-
-.bg-dark {
-    background-color: rgba(0,0,0,0.4);
-    height: 100vh;
-}
-
 .yellow-poly {
     position: absolute;
     bottom: 0;
@@ -241,29 +227,8 @@ nav a:focus,
     z-index: 0;
 }
 
-.masthead-content {
-    position: absolute;
-    top: 25%;
-    padding: 20px;
-    
-}
-
-.masthead h1 {
-    font-size: 3em;
-    line-height: 1em;
-    font-weight: 900;
-    color: var(--yellow);    
-}
-
-.masthead p {
-    color: #fff;
-    font-weight: 300;
-    font-size: 1em;
-    line-height: 1.3em;
-}
-
-.masthead .secondary-btn,
-.masthead .primary-btn {
+.secondary-btn,
+.primary-btn {
     display: inline-block;
     text-decoration: none;
     border: solid 3px;
@@ -292,7 +257,50 @@ img {
 }
 
 
-/*Benefit section*/
+/*****************************/
+/*Masthead-HOME CSS*/
+/*****************************/
+
+.masthead {
+    height: 100vh;
+    background: url(../images/homepage-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+}
+
+.bg-dark {
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+}
+
+
+.masthead-content {
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+    
+}
+
+.masthead h1 {
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 900;
+    color: var(--yellow);    
+}
+
+.masthead p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+
+/*****************************
+HOME-PAGE - 2nd Section
+/*****************************/
+
 
 .bootcamp {
     background: var(--light-grey);
