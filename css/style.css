@@ -10,6 +10,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: #fccd0a;
 }
 
 .site {
@@ -194,25 +195,6 @@ nav a:focus,
             position: relative;
         }
 
-        nav a::before {
-            content: '';
-            display: block;
-            height: 5px;
-            background: #e21212;
-            position: absolute;
-            top: -0.65em; 
-            left: 0;
-            right: 0;
-            transform: scale(0,1);
-            transform-origin: left;
-            transition: transform ease-in-out 250ms;
-        }
-
-        nav a:hover::before {
-            transform: scale(1,1);
-
-        }
-    
 }
 
 /*****************************/
@@ -300,3 +282,51 @@ nav a:focus,
     background-color: var(--yellow);
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+.bootcamp {
+    background: var(--light-grey);
+    padding: 30px 10px;
+    padding-bottom: 50px;
+}
+
+#benefit {
+/*    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 89%, 0 67%);*/
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 95%, 0 88%);
+}
+
+.img-container {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-container {
+    margin: 15px auto;
+}
+
+.heading-yellow {
+    color: var(--yellow);
+    font-size: 2em;
+}
+
+.text-container p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.1em;
+}
+
+.yellow-link {
+    color: var(--yellow);
+    font-size: 0.8em;
+}
+
+#programs {
+    height: 100vh;
+/*    background: var(--yellow);*/
+    
+}
