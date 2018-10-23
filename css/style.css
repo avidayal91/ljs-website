@@ -291,13 +291,15 @@ img {
     height: auto;
 }
 
+
+/*Benefit section*/
+
 .bootcamp {
     background: var(--light-grey);
     padding: 30px 10px;
-    
 }
 
-#benefit {
+#benefit, #programs {
 /*    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 89%, 0 67%);*/
     clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 95%, 0 88%);
     padding-bottom: 60px;
@@ -328,18 +330,91 @@ img {
 }
 
 .text-container p {
-    color: #fff;
     font-weight: 400;
     font-size: 0.8em;
     line-height: 1.1em;
 }
 
+p.white {
+    color: #fff;
+}
+
+p.grey {
+    color: var(--dark-grey);
+}
+
 .yellow-link {
     color: var(--yellow);
     font-size: 0.8em;
+    font-weight: 500;
 }
 
-#programs {
-    
-    
+.grey-link {
+    color: var(--dark-grey);
+    font-weight: 500;
+    font-size: 0.8em;
 }
+
+.bootcamp-programs {
+/*    background: var(--yellow);*/
+    padding: 30px 10px;   
+}
+
+.programs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.program-card img {
+    display: block;
+    max-width: 50px;
+    margin: 0 auto;
+}
+
+.program-card h3 {
+    font-size: 0.8em;
+    text-align: center;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+#for-corporates {
+    background: var(--light-grey);
+    height: 300px;
+/*    -webkit-clip-path: polygon(0 0, 8% 20%, 100% 33%, 100% 100%, 0 100%);*/
+    clip-path: polygon(0 0, 20% 16%, 100% 25%, 100% 100%, 0 100%);
+    margin-top: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
