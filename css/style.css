@@ -6,11 +6,12 @@
 /*****************************/
 /*basic resetting*/
 /*****************************/
+
+
 body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: #fccd0a;
 }
 
 .site {
@@ -46,7 +47,7 @@ header {
     position: fixed;
     z-index: 999;
     width: 100%;
-    transition: s;
+    transition: 0.5s;
 }
 
 header.bg-grey {	
@@ -211,8 +212,8 @@ nav a:focus,
     background-color: var(--yellow);
     width: 100%;
     height: 30vh;
-    -webkit-clip-path: polygon(83% 50%, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(83% 50%, 100% 0, 100% 100%, 0 100%);
+/*    -webkit-clip-path: polygon(75% 68%, 100% 10%, 100% 100%, 0 100%);*/
+    clip-path: polygon(80vw 80%, 100% 45%, 100% 100%, 0 100%);
     z-index: 0;
 }
 
@@ -222,8 +223,8 @@ nav a:focus,
     background-color: var(--light-grey);
     width: 100%;
     height: 30vh;
-    -webkit-clip-path: polygon(85% 62%, 100% 32%, 100% 100%, 0 100%);
-    clip-path: polygon(85% 62%, 100% 30%, 100% 100%, 0 100%);
+/*    -webkit-clip-path: polygon(80% 75%, 100% 40%, 100% 100%, 0 100%);*/
+    clip-path: polygon(calc(100% - 20vw) 75%, 100% 40%, 100% 100%, 0 100%);
     z-index: 0;
 }
 
@@ -274,6 +275,13 @@ img {
     height: 100vh;
 }
 
+.masthead .yellow-poly {
+    clip-path: polygon(calc(100% - 25vw) 68%, 100% 10%, 100% 100%, 0 100%);
+}
+
+.masthead .grey-poly {
+    clip-path: polygon(calc(100% - 20vw) 75%, 100% 40%, 100% 100%, 0 100%);
+}
 
 .masthead-content {
     position: absolute;
@@ -307,10 +315,12 @@ HOME-PAGE - 2nd Section
     padding: 30px 10px;
 }
 
-#benefit, #programs {
-/*    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 89%, 0 67%);*/
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 95%, 0 88%);
+#benefit {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15vw calc(100% - 25px), 0% calc(100% - 60px));
     padding-bottom: 60px;
+    position: relative;
+    z-index: 10;
+    
 }
 
 .img-container {
@@ -365,9 +375,18 @@ p.grey {
     font-size: 0.8em;
 }
 
+/*****************************
+HOME - Bootcamp prgrams section
+*****************************/
+
 .bootcamp-programs {
-/*    background: var(--yellow);*/
-    padding: 30px 10px;   
+    position: relative;
+    padding: 80px 10px 80px;   
+    background: var(--yellow);
+    margin-top: -60px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15vw calc(100% - 25px), 0% calc(100% - 60px));
+    z-index: 9;
+    
 }
 
 .programs-container {
@@ -389,13 +408,19 @@ p.grey {
     margin-bottom: 10px;
 }
 
+
+/*****************************
+HOME - Corporates section
+***************************/
+
 #for-corporates {
     background: var(--light-grey);
-    /*    -webkit-clip-path: polygon(0 0, 8% 20%, 100% 33%, 100% 100%, 0 100%);*/
-    clip-path: polygon(0 0, 22% 8%, 100% 12%, 100% 86%, 88% 94%, 0 100%);
-    margin-top: -80px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 60px), 85vw calc(100% - 25px), 0% 100%);
+    margin-top: -60px;
     padding: 180px 10px 40px;
     position: relative;
+    z-index: 8;
+    
     
 }
 
@@ -408,6 +433,10 @@ p.grey {
     color: var(--yellow);
     font-weight: 700;
 }
+
+/*****************************
+6X content setyles
+*****************************/
 
 .content-6x {
     position: absolute;
@@ -432,9 +461,18 @@ p.grey {
     font-size: 0.7em;
 }
 
+/*****************************
+Call To Action SECTION
+/****************************/
+
 .cta {
-    padding: 60px 10px 100px;;
+    position: relative;
+    margin-top: -60px;
+    padding: 100px 10px;
     text-align: center;
+    background: var(--yellow);
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 60px), 85vw calc(100% - 25px), 0% 100%);
+    z-index: 7;
 }
 
 .cta h1 {
@@ -451,11 +489,15 @@ p.grey {
 }
 
 
+
+/*****************************
+Footer styles
+/****************************/
+
 footer {
     background: var(--light-grey);
-    clip-path: polygon(0% 20%, 80% 15%, 100% 0%, 100% 100%, 0% 100%);
     margin-top: -60px;
-    padding: 100px 10px 20px;
+    padding: 80px 10px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
