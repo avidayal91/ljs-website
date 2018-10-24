@@ -330,7 +330,9 @@ HOME-PAGE - 2nd Section
 .heading-yellow {
     color: var(--yellow);
     font-size: 2em;
+    line-height: 1em;
 }
+
 
 .heading-grey {
     color: var(--dark-grey);
@@ -389,11 +391,107 @@ p.grey {
 
 #for-corporates {
     background: var(--light-grey);
-    height: 300px;
-/*    -webkit-clip-path: polygon(0 0, 8% 20%, 100% 33%, 100% 100%, 0 100%);*/
-    clip-path: polygon(0 0, 20% 16%, 100% 25%, 100% 100%, 0 100%);
+    /*    -webkit-clip-path: polygon(0 0, 8% 20%, 100% 33%, 100% 100%, 0 100%);*/
+    clip-path: polygon(0 0, 22% 8%, 100% 12%, 100% 86%, 88% 94%, 0 100%);
     margin-top: -80px;
+    padding: 180px 10px 40px;
+    position: relative;
+    
 }
+
+.corporates h1 {
+    font-weight: 900;
+}
+
+.corporates h2 {
+    font-size: 1em;
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+.content-6x {
+    position: absolute;
+    top: 6%;
+    left: 1%;
+    color: var(--yellow);
+        
+}
+
+.content-6x h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+.content-6x span {
+    font-size: 0.3em;
+}
+
+.content-6x p {
+    margin: 0;
+    margin-top: -5px;
+    font-size: 0.7em;
+}
+
+.cta {
+    padding: 60px 10px 100px;;
+    text-align: center;
+}
+
+.cta h1 {
+    font-size: 2em;
+    color: var(--dark-grey);
+    margin-bottom: 20px;
+}
+
+.cta .primary-btn {
+    font-size: 1em;
+    padding: 10px 40px;
+    border: solid 3px;
+    border-color: var(--light-grey);
+}
+
+
+footer {
+    background: var(--light-grey);
+    clip-path: polygon(0% 20%, 80% 15%, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: -60px;
+    padding: 100px 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;;
+}
+
+footer ul li {
+    padding: 2px 0;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7em;
+}
+
+footer h2 {
+    font-size: 0.8em;
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+.social-links {
+    grid-column: 1/3;
+    text-align: center;
+}
+.social-icons img {  
+    width: 30px;
+    margin: 5px;
+}
+
 
 
 
