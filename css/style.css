@@ -417,7 +417,7 @@ HOME - Corporates section
     background: var(--light-grey);
     clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 60px), 85vw calc(100% - 25px), 0% 100%);
     margin-top: -60px;
-    padding: 180px 10px 40px;
+    padding: 120px 10px 40px;
     position: relative;
     z-index: 8;
     
@@ -440,14 +440,14 @@ HOME - Corporates section
 
 .content-6x {
     position: absolute;
-    top: 6%;
+    top: 4%;
     left: 1%;
     color: var(--yellow);
         
 }
 
 .content-6x h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     font-weight: 900;
 }
 
