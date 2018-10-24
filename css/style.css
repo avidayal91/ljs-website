@@ -263,7 +263,7 @@ img {
 /*****************************/
 
 .masthead {
-    height: 90vh;
+    height: 100vh;
     background: url(../images/homepage-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -325,7 +325,7 @@ HOME-PAGE - 2nd Section
 }
 
 .img-container {
-    width: 90%;
+    width: 100%;
     display: block;
     margin: 0 auto;
     
