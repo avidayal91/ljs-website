@@ -263,7 +263,7 @@ img {
 /*****************************/
 
 .masthead {
-    height: 100vh;
+    height: 90vh;
     background: url(../images/homepage-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -313,7 +313,7 @@ HOME-PAGE - 2nd Section
 
 .bootcamp {
     background: var(--light-grey);
-    padding: 30px 10px;
+    padding: 30px 15px;
 }
 
 #benefit {
@@ -382,7 +382,7 @@ HOME - Bootcamp prgrams section
 
 .bootcamp-programs {
     position: relative;
-    padding: 80px 10px 80px;   
+    padding: 80px 15px 80px;   
     background: var(--yellow);
     margin-top: -60px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15vw calc(100% - 25px), 0% calc(100% - 60px));
@@ -398,8 +398,8 @@ HOME - Bootcamp prgrams section
 
 .program-card img {
     display: block;
-    max-width: 50px;
-    margin: 0 auto;
+    max-width: 80px;
+    margin: 15px auto;
 }
 
 .program-card h3 {
@@ -418,7 +418,7 @@ HOME - Corporates section
     background: var(--light-grey);
     clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 60px), 85vw calc(100% - 25px), 0% 100%);
     margin-top: -60px;
-    padding: 120px 10px 40px;
+    padding: 120px 15px 40px;
     position: relative;
     z-index: 8;
     
@@ -469,7 +469,7 @@ Call To Action SECTION
 .cta {
     position: relative;
     margin-top: -60px;
-    padding: 100px 10px;
+    padding: 100px 15px;
     text-align: center;
     background: var(--yellow);
     clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 60px), 85vw calc(100% - 25px), 0% 100%);
@@ -498,7 +498,7 @@ Footer styles
 footer {
     background: var(--light-grey);
     margin-top: -60px;
-    padding: 80px 10px 20px;
+    padding: 80px 15px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
