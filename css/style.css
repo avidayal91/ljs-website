@@ -245,6 +245,7 @@ nav a:focus,
 .secondary-btn {
     color: var(--yellow);
     background-color: rgba(0,0,0,0.4);
+    margin-right: 15px;
 }
 
 .primary-btn {
