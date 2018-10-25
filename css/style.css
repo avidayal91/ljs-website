@@ -53,7 +53,7 @@ header {
 
 
 header.bg-grey {	
-    background: var(--dark-grey);
+    background: var(--light-grey);
 
 }
 
@@ -256,18 +256,32 @@ nav a:focus,
     text-transform: uppercase;
     font-size: 0.8em;
     font-weight: 500;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.7);
+    
 }
 
 .secondary-btn {
     color: var(--yellow);
     background-color: rgba(0,0,0,0.4);
     margin-right: 15px;
+    transition: 0.5s ease-out;
 }
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+    box-shadow: 0 0px 30px rgb(252, 205, 10, 0.8);
+}
+
+
 
 .primary-btn {
     color: var(--light-grey);
     background-color: var(--yellow);
+    transition: 0.5s ease-out;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+    box-shadow: 0 0px 30px rgb(252, 205, 10, 0.8);
 }
 
 img {
@@ -452,8 +466,6 @@ HOME - Corporates section
     padding: 120px 15px 40px;
     position: relative;
     z-index: 8;
-    
-    
 }
 
 #for-corporates h1 {
@@ -510,12 +522,24 @@ Call To Action SECTION
     margin-bottom: 20px;
 }
 
-#call-to-action .primary-btn {
+#call-to-action .cta-btn {
     font-size: 1em;
     padding: 10px 40px;
     border: solid 3px;
     border-color: var(--light-grey);
 }
+
+#call-to-action .cta-btn:hover {
+/*
+    color: var(--yellow);
+    background: var(--light-grey);
+*/
+    box-shadow: 0 10px 30px rgb(0, 0, 0, 0.8);
+    transform: scale(1.08,1.08);
+    
+}
+
+
 
 
 
@@ -579,6 +603,10 @@ footer h2 {
         clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 80px), 85vw calc(100% - 30px), 0% 100%);
     }
     
+    .text-container {
+        max-width: 600px;
+    }
+    
     #benefit {
         padding-bottom: 80px;
     }
@@ -593,6 +621,11 @@ footer h2 {
     .programs-container {
         max-width: none;
         margin: 0;
+        order: 2;
+    }
+    
+    #programs .text-container {
+        margin-left: auto;
     }
     
     #for-corporates {
@@ -627,12 +660,30 @@ footer h2 {
         grid-template-columns: 2fr 4fr;
         background: none;
     }
+    
     .bg-dark {
         background: var(--dark-grey);
     }
+    
     .yellow-poly, .grey-poly {
         display: none;
     }
+    
+    .masthead h1 {
+        font-size: 4em;    
+    }
+    
+    .masthead p {
+        margin-bottom: 40px;
+    }
+    
+    .masthead .primary-btn,
+    .masthead .secondary-btn {
+        font-size: 1em;
+        padding: 10px 25px;
+        
+    }
+    
     .masthead-side-section {
         display: block;
         background: url(../images/homepage-hero.jpg);
@@ -650,42 +701,110 @@ footer h2 {
         clip-path: polygon(calc(100% - 15vw) 75%, 100% 35%, 100% 100%, 0 100%);
     }
     
+    .right-slant {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10vw calc(100% - 50px), 0% calc(100% - 120px));
+    }
+    
+    .left-slant {
+        clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 120px), 90vw calc(100% - 50px), 0% 100%);
+    }
+    
+    .heading-yellow, .heading-grey {
+        font-size: 3em;
+        margin-bottom: 0.8em;
+    }
+    
+    .text-container p {
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+    
+    .text-container a {
+        font-size: 1em;
+    }
+    #benefit {
+        padding-bottom: 100px;
+    }
+    
+    #programs,
+    #for-corporates,
+    #call-to-action,
     footer {
+        margin-top: -120px;
+    }
+    
+    #programs {
+        padding-top: 140px;
+        padding-bottom: 120px;
+    }
+    
+    .programs-container h3 {
+        font-size: 1em;
+    }
+    
+    #for-corporates {
+        padding-top: 180px;
+    }
+    
+    #for-corporates .heading-yellow {
+        margin-bottom: 0;
+    }
+    
+    #for-corporates h2 {
+        margin-bottom: 2em;
+    }
+    
+    .content-6x {
+        left: 1%;
+        top: 6%;
+    }
+    .content-6x h1 {
+        font-size: 4.5em;
+    }
+    .content-6x p {
+        font-size: 0.8em;
+    }
+    
+    
+    #call-to-action {
+        padding-top: 180px;
+        padding-bottom: 120px;
+    }
+    
+    #call-to-action h1 {
+        font-size: 3em;
+        margin-bottom: 60px;
+    }
+    
+    #call-to-action .primary-btn {
+        font-size: 1.5em;
+        padding: 15px 60px;
+        border-radius: 50px;
+    }
+            
+    footer {
+        padding-top: 150px;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    footer h2 {
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+    
+    footer ul a {
+        font-size: 0.8em;
     }
     
     .social-links {
         grid-column: 3/4;
     }
     
+    .social-icons img {
+        width: 48px;
+    }
+    
+    .quick-links,  .program-links, .social-links {
+        margin: 0 auto;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
