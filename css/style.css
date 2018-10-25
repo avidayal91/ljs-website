@@ -588,6 +588,7 @@ footer h2 {
     
     #call-to-action, footer {
         margin-top: -80px;
+        padding-top: 100px;
     }
 }
 
