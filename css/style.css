@@ -223,7 +223,7 @@ nav a:focus,
 /*Global CSS*/
 /*****************************/
 
-.yellow-poly {
+.yellow-poly, .side-yellow-poly {
     position: absolute;
     bottom: 0;
     background-color: var(--yellow);
@@ -234,7 +234,7 @@ nav a:focus,
     z-index: 0;
 }
 
-.grey-poly {
+.grey-poly, .side-grey-poly {
     position: absolute;
     bottom: 0;
     background-color: var(--light-grey);
@@ -341,6 +341,10 @@ img {
     font-weight: 300;
     font-size: 1em;
     line-height: 1.3em;
+}
+
+.masthead-side-section {
+    display: none;
 }
 
 
@@ -615,6 +619,45 @@ footer h2 {
         padding-top: 100px;
     }
 
+}
+
+@media screen and (min-width: 991px) {
+    .masthead {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        background: none;
+    }
+    .bg-dark {
+        background: var(--dark-grey);
+    }
+    .yellow-poly, .grey-poly {
+        display: none;
+    }
+    .masthead-side-section {
+        display: block;
+        background: url(../images/homepage-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 40%;
+        position: relative;
+    }
+    .side-yellow-poly {
+        height: 45vh;
+        clip-path: polygon(calc(100% - 15vw) 60%, 100% 0, 100% 100%, 0 100%);
+    }
+    .side-grey-poly {
+        height: 40vh;
+        clip-path: polygon(calc(100% - 15vw) 75%, 100% 35%, 100% 100%, 0 100%);
+    }
+    
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .social-links {
+        grid-column: 3/4;
+    }
+    
 }
 
 
