@@ -567,6 +567,12 @@ footer h2 {
     #programs {
         padding-top: 100px;
     }
+    
+    .programs-container {
+        max-width: none;
+        margin: 0;
+    }
+    
     #for-corporates {
         padding-top: 150px;
     }
@@ -590,6 +596,7 @@ footer h2 {
         margin-top: -80px;
         padding-top: 100px;
     }
+
 }
 
 
