@@ -323,6 +323,7 @@ img {
     position: relative;
 }
 
+
 .bg-dark {
     background-color: rgba(0,0,0,0.4);
     height: 100vh;
@@ -540,9 +541,6 @@ Call To Action SECTION
 }
 
 
-
-
-
 /*****************************
 Footer styles
 /****************************/
@@ -587,6 +585,29 @@ footer h2 {
     margin: 5px;
 }
 
+/*************************
+INNER PAGE: MASTHEAD
+**************************/
+
+.inner-masthead {
+    height: 100vh;
+    background: var(--light-grey);
+    position: relative;
+}
+
+.inner-masthead-content {
+    padding: 20% 10px 20px;
+}
+
+.inner-masthead-content .img-container {
+    display: none;
+}
+
+@media screen and (min-height: 600px) {
+    .inner-masthead-content .img-container {
+        display: block;
+    }
+}
 
 @media screen and (min-width: 600px) {
     #benefit, #programs, #for-corporates {
