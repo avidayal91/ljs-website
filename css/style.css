@@ -618,7 +618,6 @@ footer h2 {
 INNER PAGE: ABOUT
 **************************/
 
-
 #why-ljs {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -641,6 +640,26 @@ INNER PAGE: ABOUT
     padding: 0.5em 0;
 }
 
+blockquote {
+    margin: auto;
+    padding: 15px 30px;
+    line-height: 1.3em;
+    color: #fff;
+    position: relative;
+}
+
+blockquote::before {
+    content: "\201C";
+    color: var(--yellow);
+    font-size: 3em;
+}
+
+blockquote span {
+    color: var(--yellow);
+    display: block;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
 
 #team {
     margin-top: -60px;
@@ -654,6 +673,10 @@ INNER PAGE: ABOUT
     margin-top: -60px;
     z-index: 8;
     padding-top: 80px;
+}
+
+#partners img {
+    box-shadow: none;
 }
 
 
