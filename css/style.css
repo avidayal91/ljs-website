@@ -332,6 +332,16 @@ img {
     position: relative;
 }
 
+#programs-banner {
+    background: url(../images/programs-masthead.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    position: relative;
+}
+
+
+
 .bg-dark {
     background-color: rgba(0,0,0,0.4);
     height: 100vh;
@@ -629,15 +639,24 @@ INNER PAGE: ABOUT
     margin: 0.5em 0;
 }
 
-#why-ljs ul {
+#why-ljs ul,
+.inner-masthead-content ul,
+.programs ul{
     list-style-image: url(../images/triangle.png);
     padding: 0 20px;
     color: #fff;
     font-size: 0.8em;
 }
 
-#why-ljs ul  li {
+#why-ljs ul  li,
+.inner-masthead-content ul li,
+.programs ul li {
     padding: 0.5em 0;
+}
+
+#why-ljs ul a,
+.inner-masthead-content ul a {
+    color: #fff;
 }
 
 blockquote {
@@ -699,6 +718,62 @@ blockquote span {
     box-shadow: none;
 }
 
+/*************************
+INNER PAGE: PROGRAMS
+**************************/
+
+.programs .img-container {
+    max-width: 150px;
+}
+
+.programs img {
+    box-shadow: none;
+}
+
+.programs h2 {
+    font-size: 1.2em;
+}
+
+ul.grey {
+    color: var(--dark-grey);
+    list-style-image: url(../images/triangle-grey.png);
+}
+
+#full-stack-program {
+    position: relative;
+    z-index: 10;
+}
+#blockchain-program {
+    position: relative;
+    margin-top: -60px;
+    z-index: 9;
+    padding: 60px 15px 40px;
+}
+
+#vr-program {
+    position: relative;
+    margin-top: -60px;
+    z-index: 8;
+    padding: 60px 15px 40px;
+}
+
+#machine-learning-program {
+    position: relative;
+    margin-top: -60px;
+    z-index: 7;
+    padding: 60px 15px 40px;
+}
+
+#corporate-program {
+    position: relative;
+    margin-top: -60px;
+    z-index: 6;
+    padding: 60px 15px 40px;
+}
+
+#corporate-program .img-container {
+    max-width: 400px;
+}
 
 
 
@@ -735,6 +810,10 @@ blockquote span {
     }
     #programs {
         padding-top: 100px;
+    }
+    
+    .program-card img {
+        max-width: 100px;
     }
     
     .programs-container {
@@ -791,7 +870,21 @@ blockquote span {
         padding: 15px;
     }
     
+    .programs {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 15px;
+    }
     
+    #blockchain-program,
+    #vr-program,
+    #corporate-program,
+    #machine-learning-program {
+        margin-top: -80px;
+        padding-top: 90px;
+    }
+    
+        
         
 }
 
@@ -856,6 +949,15 @@ blockquote span {
         background-position: 40%;
         position: relative;
     }
+    
+    .programs-masthead-side-section {
+        display: block;
+        background: url(../images/programs-masthead.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 40%;
+        position: relative;
+    }
     .side-yellow-poly {
         height: 45vh;
         clip-path: polygon(calc(100% - 15vw) 60%, 100% 0, 100% 100%, 0 100%);
@@ -902,7 +1004,11 @@ blockquote span {
     
     #programs {
         padding-top: 140px;
-        padding-bottom: 120px;
+        padding-bottom: 100px;
+    }
+    
+    .program-card img {
+        max-width: 150px;
     }
     
     .programs-container h3 {
@@ -949,7 +1055,40 @@ blockquote span {
         border-radius: 50px;
     }
     
-    #why-ljs ul {
+            
+    footer {
+        padding-top: 150px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    footer h2 {
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+    
+    footer ul a {
+        font-size: 0.8em;
+    }
+    
+    .social-links {
+        grid-column: 3/4;
+    }
+    
+    .social-icons img {
+        width: 48px;
+    }
+    
+    .quick-links,  .program-links, .social-links {
+        margin: 0 auto;
+    }
+    
+    /*************************
+    INNER PAGE: ABOUT
+    **************************/
+    
+    #why-ljs ul,
+    .inner-masthead-content ul,
+    .programs ul{
         font-size: 1em;
     }
     
@@ -980,31 +1119,25 @@ blockquote span {
         grid-gap: 15px;
         padding: 15px;
     }
-            
-    footer {
-        padding-top: 150px;
-        grid-template-columns: 1fr 1fr 1fr;
+    
+    /*************************
+    INNER PAGE: PROGRAMS
+    **************************/
+    .programs {
+        grid-template-columns: 2fr 3fr;
     }
     
-    footer h2 {
-        font-size: 1em;
-        margin-bottom: 1em;
+    .programs .img-container {
+        max-width: 250px;
     }
     
-    footer ul a {
-        font-size: 0.8em;
-    }
     
-    .social-links {
-        grid-column: 3/4;
-    }
-    
-    .social-icons img {
-        width: 48px;
-    }
-    
-    .quick-links,  .program-links, .social-links {
-        margin: 0 auto;
+    #blockchain-program,
+    #vr-program,
+    #corporate-program,
+    #machine-learning-program {
+        margin-top: -120px;
+        padding-top: 120px;
     }
         
 }
