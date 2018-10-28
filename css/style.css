@@ -675,9 +675,31 @@ blockquote span {
     padding-top: 80px;
 }
 
-#partners img {
+#supporters {
+    position: relative;
+    margin-top: -60px;
+    z-index: 7;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+#supporters .text-container {
+    text-align: center;
+}
+
+#supporters .supporters-box {
+    background: #fff;
+}
+#supporters .img-container {
+    max-width: 200px;
+/*    background: #fff;*/
+}
+
+#partners img,
+#supporters img {
     box-shadow: none;
 }
+
 
 
 
@@ -710,7 +732,7 @@ blockquote span {
         padding-bottom: 80px;
     }
     
-    #programs, #for-corporates, #team, #partners {
+    #programs, #for-corporates, #team, #partners, #supporters {
         margin-top: -80px;
     }
     #programs {
@@ -751,6 +773,24 @@ blockquote span {
         padding-top: 100px;
     }
     
+    #supporters {
+        padding: 100px 15px 100px;
+    }
+    
+    #supporters .text-container:first-of-type {
+        max-width: none;
+        margin-bottom: 1em;
+    }
+    
+    #supporters .supporters-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        padding: 15px;
+    }
+    
+    
+        
 }
 
 @media screen and (min-width: 991px) {
@@ -853,6 +893,7 @@ blockquote span {
     #call-to-action,
     #team,
     #partners,
+    #supporters,
     footer {
         margin-top: -120px;
     }
@@ -914,6 +955,17 @@ blockquote span {
     #team {
         padding: 150px 15px 120px;
     }
+    
+    #supporters {
+        padding: 150px 15px 150px;
+    }
+    
+    #supporters .supporters-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        padding: 15px;
+    }
             
     footer {
         padding-top: 150px;
@@ -940,4 +992,5 @@ blockquote span {
     .quick-links,  .program-links, .social-links {
         margin: 0 auto;
     }
+        
 }
