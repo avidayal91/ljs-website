@@ -313,6 +313,12 @@ img {
     max-width: 400px;
 }
 
+form h2 {
+    font-size: 1.2em;
+    margin: 30px 0 10px;;
+    color: var(--yellow);
+}
+
 form input,
 form select {
     width: 90%;
@@ -330,8 +336,20 @@ form select {
     height: 40px;
 }
 
+form textarea {
+    width: 90%;
+    border: 2px solid #414142;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 1);
+    padding: 5px 5px 5px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    
+}
+
 form input:focus,
-form select:focus {
+form select:focus,
+form textarea:focus {
     background-color: var(--yellow);
 }
 
@@ -459,7 +477,10 @@ form button:focus {
     display: none;
 }
 
-about-masthead-side-section {
+.about-masthead-side-section,
+.contact-masthead-side-section,
+.career-masthead-side-section,
+.programs-masthead-side-section {
     display: none;
 }
 
@@ -848,7 +869,7 @@ ul.grey {
 }
 
 /*************************
-INNER PAGE: APPLY NOW
+INNER PAGE: APPLY NOW & CONTACT
 **************************/
 #apply-now {
     height: 600px;
@@ -856,7 +877,24 @@ INNER PAGE: APPLY NOW
     position: relative;
 }
 
-#apply-now .inner-masthead-content {
+#contact {
+    height: 750px;
+    background: var(--dark-grey);
+    position: relative;
+}
+
+.inner-masthead-content i {
+        color: var(--yellow);
+        margin-right: 15px;
+        font-size: 1.2em;
+}
+
+i.flip {
+        transform: rotate(90deg);
+}
+
+#apply-now .inner-masthead-content,
+#contact .inner-masthead-content{
     top: 15%;
 }
 
@@ -1068,6 +1106,15 @@ INNER PAGE: APPLY NOW
         background-position: 60%;
         position: relative;
     }
+    
+    .contact-masthead-side-section {
+        display: block;
+        background: url(../images/career-masthead.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60%;
+        position: relative;
+    }
     .side-yellow-poly {
         height: 45vh;
         clip-path: polygon(calc(100% - 15vw) 60%, 100% 0, 100% 100%, 0 100%);
@@ -1260,6 +1307,8 @@ INNER PAGE: APPLY NOW
     #machine-ai-dev {
         padding-bottom: 120px;
     }
+    
+    
     
     /*************************
     INNER PAGE: APPLY NOW
