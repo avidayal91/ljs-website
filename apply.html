@@ -42,12 +42,12 @@
                       <h1 class="heading-yellow">Apply for Bootcamp</h1>
                   </div>
                   <div class="form-container">
-                      <form action="">
+                      <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwxSd0CeI_kzVDT7TrLLrrH9Wl7W8b6pHPdMBe3nAN4GQ9Wniw/exec">
                           <div class="form-elements">
                               <input name="name" type="text" placeholder="Name" required>
                               <input name="phone" type="tel" placeholder="9xxxx-xxxxx">
                               <input name="email" type="email" placeholder="abc@example.com" required>
-                              <select name="courses" id="" required>
+                              <select name="course" id="" required>
                                   <option value="" disabled selected>Select bootcamp program</option>
                                   <option value="get-started-web">Getting Started with Web</option>
                                   <option value="full-stack">Full-Stack Web Development</option>
@@ -58,7 +58,11 @@
                               </select>
                               <button type="submit" class="fill-btn">SUBMIT</button>
                           </div>
+                          <div class="thankyou_message" style="display:none;" id="thankyou_message">
+                                <h2 class="heading-yellow">Thank you for submitting info, we will reach out to you soon.</h2>
+                          </div>
                       </form>
+                      
                   </div>
               </div>
               <div class="yellow-poly"></div>
@@ -105,5 +109,6 @@
           </div>
       </footer>
       <script src="js/main.js"></script>
+      <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 </body>
 </html>

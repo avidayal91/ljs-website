@@ -739,6 +739,11 @@ blockquote span {
     padding: 80px 15px 60px;
 }
 
+#team .img-container {
+    max-width: 200px;
+    margin: auto;
+}
+
 #partners {
     position: relative;
     margin-top: -60px;
@@ -845,6 +850,11 @@ INNER PAGE: APPLY NOW
 
 #apply-now .inner-masthead-content {
     top: 15%;
+}
+
+#thankyou_message h2 {
+    font-size: 1em;
+    margin-top: 50px;
 }
 
 
@@ -1221,6 +1231,11 @@ INNER PAGE: APPLY NOW
     
     #apply-now {
         height: 100vh;
+    }
+    
+    #apply-now .inner-masthead-content {
+        top: 20%;
+        left: 5%;
     }
     
     
