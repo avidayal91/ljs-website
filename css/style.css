@@ -877,16 +877,21 @@ INNER PAGE: APPLY NOW & CONTACT
     position: relative;
 }
 
-#contact {
+#contact-banner {
     height: 750px;
-    background: var(--dark-grey);
+    background: var(--light-grey);
     position: relative;
 }
 
+#contact-banner .bg-dark {
+    height: 750px;
+    
+}
+
+
 .inner-masthead-content i {
         color: var(--yellow);
-        margin-right: 15px;
-        font-size: 1.2em;
+        font-size: 1em;
 }
 
 i.flip {
@@ -894,7 +899,7 @@ i.flip {
 }
 
 #apply-now .inner-masthead-content,
-#contact .inner-masthead-content{
+#contact-banner .inner-masthead-content{
     top: 15%;
 }
 
@@ -1109,12 +1114,13 @@ i.flip {
     
     .contact-masthead-side-section {
         display: block;
-        background: url(../images/career-masthead.jpg);
+        background: url(../images/contact-masthead.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 60%;
+        background-position: 40%;
         position: relative;
     }
+    
     .side-yellow-poly {
         height: 45vh;
         clip-path: polygon(calc(100% - 15vw) 60%, 100% 0, 100% 100%, 0 100%);
@@ -1321,6 +1327,10 @@ i.flip {
     #apply-now .inner-masthead-content {
         top: 20%;
         left: 5%;
+    }
+    
+    #contact-banner .dark-overlay {
+        height: 750px;
     }
     
     
