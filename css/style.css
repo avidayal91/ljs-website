@@ -386,6 +386,14 @@ form button:focus {
     position: relative;
 }
 
+#career-pathways-banner {
+    background: url(../images/career-masthead.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+    position: relative;
+}
+
 
 .bg-dark {
     background-color: rgba(0,0,0,0.4);
@@ -776,7 +784,7 @@ blockquote span {
 }
 
 /*************************
-INNER PAGE: PROGRAMS
+INNER PAGE: PROGRAMS & CAREERS
 **************************/
 
 .programs .img-container {
@@ -796,39 +804,39 @@ ul.grey {
     list-style-image: url(../images/triangle-grey.png);
 }
 
-#full-stack-program {
+#full-stack-program, #frontend-dev {
     position: relative;
     z-index: 10;
 }
-#blockchain-program {
+#blockchain-program, #backend-dev {
     position: relative;
     margin-top: -60px;
     z-index: 9;
     padding: 60px 15px 40px;
 }
 
-#vr-program {
+#vr-program, #fullstack-dev {
     position: relative;
     margin-top: -60px;
     z-index: 8;
     padding: 60px 15px 40px;
 }
 
-#machine-learning-program {
+#machine-learning-program, #blockchain-dev {
     position: relative;
     margin-top: -60px;
     z-index: 7;
     padding: 60px 15px 40px;
 }
 
-#get-started-web {
+#get-started-web, #machine-ai-dev {
     position: relative;
     margin-top: -60px;
     z-index: 6;
     padding: 60px 15px 40px;
 }
 
-#corporate-program {
+#corporate-program, #vr-dev {
     position: relative;
     margin-top: -60px;
     z-index: 5;
@@ -963,9 +971,18 @@ INNER PAGE: APPLY NOW
     #vr-program,
     #corporate-program,
     #machine-learning-program,
-    #get-started-web {
+    #get-started-web,
+    #backend-dev,
+    #fullstack-dev,
+    #blockchain-dev,
+    #machine-ai-dev,
+    #vr-dev {
         margin-top: -80px;
         padding-top: 90px;
+    }
+    
+    #blockchain-dev, #machine-ai-dev{
+        padding-bottom: 70px;
     }
     
         
@@ -1040,6 +1057,15 @@ INNER PAGE: APPLY NOW
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 40%;
+        position: relative;
+    }
+    
+    .career-masthead-side-section {
+        display: block;
+        background: url(../images/career-masthead.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60%;
         position: relative;
     }
     .side-yellow-poly {
@@ -1205,7 +1231,7 @@ INNER PAGE: APPLY NOW
     }
     
     /*************************
-    INNER PAGE: PROGRAMS
+    INNER PAGE: PROGRAMS & Careers
     **************************/
     .programs {
         grid-template-columns: 2fr 3fr;
@@ -1220,9 +1246,19 @@ INNER PAGE: APPLY NOW
     #vr-program,
     #corporate-program,
     #machine-learning-program,
-    #get-started-web {
+    #get-started-web,
+    #backend-dev,
+    #fullstack-dev,
+    #blockchain-dev,
+    #machine-ai-dev,
+    #vr-dev {
         margin-top: -120px;
         padding-top: 120px;
+    }
+    
+    #blockchain-dev,
+    #machine-ai-dev {
+        padding-bottom: 120px;
     }
     
     /*************************
