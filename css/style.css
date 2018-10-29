@@ -838,11 +838,14 @@ ul.grey {
 INNER PAGE: APPLY NOW
 **************************/
 #apply-now {
-    height: 150vh;
+    height: 600px;
     background: var(--dark-grey);
     position: relative;
-}   
+}
 
+#apply-now .inner-masthead-content {
+    top: 15%;
+}
 
 
 
@@ -1211,5 +1214,14 @@ INNER PAGE: APPLY NOW
         margin-top: -120px;
         padding-top: 120px;
     }
-        
+    
+    /*************************
+    INNER PAGE: APPLY NOW
+    **************************/
+    
+    #apply-now {
+        height: 100vh;
+    }
+    
+    
 }
