@@ -7,6 +7,8 @@ $(window).on("scroll", function(){
     }	
 })
 
+// wow animation Js
+    new WOW().init();
 
 // Smooth scrolling
 // Select all links with hashes

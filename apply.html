@@ -13,6 +13,8 @@
 <!--    font-awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     
+<!--    wow animation-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 <!--    custom stylesheet-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -38,10 +40,10 @@
       <main>
           <section id="apply-now" class="apply-banner">
               <div class="inner-masthead-content">
-                  <div class="text-container">
+                  <div class="text-container wow animated fadeInUp" data-wow-delay="0.5s">
                       <h1 class="heading-yellow">Apply for Bootcamp</h1>
                   </div>
-                  <div class="form-container">
+                  <div class="form-container wow animated fadeInUp" data-wow-delay="0.5s">
                       <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwxSd0CeI_kzVDT7TrLLrrH9Wl7W8b6pHPdMBe3nAN4GQ9Wniw/exec">
                           <div class="form-elements">
                               <input name="name" type="text" placeholder="Name" required>
@@ -76,7 +78,7 @@
       
       </main>
       <footer>
-          <div class="quick-links">
+          <div class="quick-links wow animated fadeInUp" data-wow-delay="0.5s">
               <h2>QUICK LINKS</h2>
               <ul>
                   <li><a href="about.html">What is bootcamp?</a></li>
@@ -88,7 +90,7 @@
 <!--                  <li><a href="#">Newsletter</a></li>-->
               </ul>
           </div>
-          <div class="program-links">
+          <div class="program-links wow animated fadeInUp" data-wow-delay="0.5s">
               <h2>PROGRAMS</h2>
               <ul>
                   <li><a href="programs.html#full-stack-program">Full-Stack Web Development</a></li>
@@ -98,7 +100,7 @@
                   <li><a href="programs.html#get-started-web">Get Started with Web</a></li>
               </ul>
           </div>
-          <div class="social-links">
+          <div class="social-links wow animated fadeInUp" data-wow-delay="0.5s">
               <h2>CONNECT WITH US</h2>
               <div class="social-icons">
                   <a href="https://www.facebook.com/LetsJavaScript" target="_blank"><img src="images/social-icons/facebook.png" alt=""></a>
@@ -109,6 +111,7 @@
               </div>
           </div>
       </footer>
+      <script src="js/wow.min.js"></script>
       <script src="js/main.js"></script>
       <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 </body>

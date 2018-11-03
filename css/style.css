@@ -769,8 +769,12 @@ blockquote span {
 }
 
 #team .img-container {
-    max-width: 200px;
+    max-width: 250px;
     margin: auto;
+}
+
+#team img {
+    box-shadow: none;
 }
 
 #partners {
