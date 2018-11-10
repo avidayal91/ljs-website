@@ -790,7 +790,8 @@ blockquote span {
 
 #team .img-container {
     max-width: 250px;
-    margin: 20px auto;
+    margin: auto;
+    margin-top: 40px;
 }
 
 #team img {
@@ -1004,6 +1005,13 @@ i.flip {
     #benefit, #why-ljs {
         padding-bottom: 80px;
     }
+    
+    #team .img-container {
+        max-width: 250px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 30px;
+}
     
     #programs, #for-corporates, #team, #partners, #supporters {
         margin-top: -80px;
