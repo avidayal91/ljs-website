@@ -375,6 +375,22 @@ form button:focus {
     color: var(--dark-grey);
 }
 
+table {
+    font-size: 0.8em;
+    border-spacing: 5px;
+}
+
+th {
+    text-align: left;
+    background-color: var(--light-grey);
+    color: var(--yellow);
+    padding: 5px;
+}
+
+td {
+    margin: 10px 0;
+    color: var(--light-grey);
+}
 
 /*****************************/
 /*Masthead-HOME CSS*/
@@ -813,7 +829,7 @@ blockquote span {
 }
 
 /*************************
-INNER PAGE: PROGRAMS & CAREERS
+INNER PAGE: CAREER PATHWAYS
 **************************/
 
 .programs .img-container {
@@ -832,6 +848,46 @@ ul.grey {
     color: var(--dark-grey);
     list-style-image: url(../images/triangle-grey.png);
 }
+
+.projects-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.projects-box h3 {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.projects-box h2 {
+    grid-column: 1/3;
+}
+
+.projects-yellow div {
+    background-color: var(--yellow);
+    color: var(--dark-grey);
+}
+
+.projects-grey div {
+    background-color: var(--light-grey);
+    color: var(--yellow);
+}
+
+.projects-card {
+    width: 90%;
+    min-height: 70px;
+    max-width: 200px;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.6);    
+}
+
+.projects-card h3 {
+    text-align: center;
+/*    text-transform: capitalize;*/
+}
+
 
 #full-stack-program, #frontend-dev {
     position: relative;
@@ -1034,10 +1090,13 @@ i.flip {
         padding-top: 90px;
     }
     
-    #blockchain-dev, #machine-ai-dev{
+    #fullstack-dev, #blockchain-dev, #machine-ai-dev{
         padding-bottom: 70px;
     }
     
+    .projects-card {
+        max-height: 70px;
+    }
         
         
 }
@@ -1308,6 +1367,20 @@ i.flip {
         max-width: 250px;
     }
     
+    .projects-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+    
+    .projects-box h2 {
+        grid-column: 1/4;
+    }
+    
+    table {
+        font-size: 1em;
+    }
+    
     
     #blockchain-program,
     #vr-program,
@@ -1323,8 +1396,10 @@ i.flip {
         padding-top: 120px;
     }
     
+    #fullstack-dev,
     #blockchain-dev,
-    #machine-ai-dev {
+    #machine-ai-dev,
+    #vr-dev {
         padding-bottom: 120px;
     }
     
