@@ -735,7 +735,7 @@ INNER PAGE: ABOUT
 **************************/
 
 #why-ljs {
-    padding-top: 40px;
+    padding-top: 75px;
     padding-bottom: 40px;
     position: relative;
     z-index: 10;
@@ -894,6 +894,10 @@ ul.grey {
 /*    text-transform: capitalize;*/
 }
 
+#full-stack-program,
+#frontend-dev {
+    padding-top: 75px;    
+}
 
 #full-stack-program, #frontend-dev {
     position: relative;
@@ -1243,7 +1247,7 @@ i.flip {
         font-size: 1em;
     }
     #benefit {
-        padding-top: 85px;
+        padding-top: 100px;
         padding-bottom: 100px;
         grid-column-gap: 50px;
     }
@@ -1346,6 +1350,7 @@ i.flip {
     
     #why-ljs {
         grid-column-gap: 50px;
+        padding-top: 100px;
     }
     
     #goal {
@@ -1409,6 +1414,12 @@ i.flip {
     /*************************
     INNER PAGE: PROGRAMS & Careers
     **************************/
+    
+    #full-stack-program,
+    #frontend-dev {
+        padding-top: 100px;    
+    }
+    
     .programs {
         grid-template-columns: 2fr 3fr;
     }
@@ -1517,10 +1528,13 @@ New media queries for bigger screens
         left: 10px;
     }
     
-    #benefit {
+    #benefit,
+    #why-ljs,
+    #full-stack-program,
+    frontend-dev{
         padding-top: 110px;
     }
-    
+        
     #team {
         grid-template-columns: 1fr 2fr 1fr 2fr;
         padding-left: 5%;
