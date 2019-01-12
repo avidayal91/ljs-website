@@ -1415,12 +1415,12 @@ i.flip {
 
     .projects-box {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 10px;
     }
 
     .projects-box h2 {
-        grid-column: 1/4;
+        grid-column: 1/5;
     }
 
     table {
@@ -1447,6 +1447,24 @@ i.flip {
     #machine-ai-dev,
     #vr-dev {
         padding-bottom: 120px;
+    }
+    
+    #frontend-dev .text-container:first-of-type,
+    #backend-dev .text-container:first-of-type,
+    #fullstack-dev .text-container:first-of-type,
+    #blockchain-dev .text-container:first-of-type,
+    #machine-ai-dev .text-container:first-of-type,
+    #vr-dev .text-container:first-of-type{
+        margin-left: auto;
+    }
+    
+    #frontend-dev .text-container:last-of-type,
+    #backend-dev .text-container:last-of-type,
+    #fullstack-dev .text-container:last-of-type,
+    #blockchain-dev .text-container:last-of-type,
+    #machine-ai-dev .text-container:last-of-type,
+    #vr-dev .text-container:last-of-type{
+        max-width: 800px;
     }
 
 
