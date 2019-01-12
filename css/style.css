@@ -1128,6 +1128,13 @@ i.flip {
         align-self: flex-end;
     }
     
+    #contact-banner,
+    #contact-banner .dark-overlay,
+    #contact-banner .bg-dark{
+        height: 120vh;
+        min-height: 800px;
+    }
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -1511,9 +1518,11 @@ i.flip {
         top: 20%;
         left: 5%;
     }
-
-    #contact-banner .dark-overlay {
-        height: 750px;
+ 
+    #contact-banner,
+    #contact-banner .dark-overlay,
+    #contact-banner .bg-dark{
+        height: 120vh;
     }
 
 
