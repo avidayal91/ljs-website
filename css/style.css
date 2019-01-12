@@ -952,14 +952,13 @@ INNER PAGE: APPLY NOW & CONTACT
 }
 
 #contact-banner {
-    height: 750px;
     background: var(--light-grey);
     position: relative;
 }
 
-#contact-banner .bg-dark {
-    height: 750px;
-
+#contact-banner .bg-dark,
+#contact-banner{
+    height: 800px;
 }
 
 
@@ -1482,7 +1481,7 @@ i.flip {
         max-width: 800px;
     }
 
-
+    
 
     /*************************
     INNER PAGE: APPLY NOW
@@ -1544,5 +1543,11 @@ New media queries for bigger screens
     #supporters {
         padding-left: 5%;
         padding-right: 5%;
+    }
+    
+    #contact-banner,
+    #contact-banner .dark-overlay,
+    #contact-banner .bg-dark{
+        height: 100vh;
     }
 }
